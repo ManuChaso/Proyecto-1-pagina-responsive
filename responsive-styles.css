@@ -1,0 +1,319 @@
+@font-face {
+    font-family: sourceSansBold;
+    src: url('./assets/SourceSansPro-Bold.ttf');
+}
+@media screen and (max-width: 1000px){
+    .shipping{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+    }
+    .shipping h1{
+        color: white;
+        font-family: sourceSansBold;
+        font-size: 25px;
+        text-align: center;
+    }
+    .logo{
+        width: 100px;
+        margin: 20px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-icon p{
+        font-family: sourceSansBold;
+        font-size: 12px;
+    }
+    .menu-icon{
+        width: 30px;
+        height: 50px;
+       
+    }
+    #toggle-menu{
+       display: none;
+    }
+    #toggle-menu:checked ~ .nav-links-responsive{
+        width: 300px;
+    }
+    .nav-links-responsive{
+        overflow: hidden;
+        position: absolute;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: black;
+        transition: 500ms;
+    }
+    .nav-links-responsive a{
+        text-decoration: none;
+        color: white;
+        font-family: sourceSansBold;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .menu-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    .menu-icon p{
+        font-family: sourceSansBold;
+        font-size: 12px;
+    }
+    .nav-links{
+        display: none;
+    }
+
+    .home{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+    }
+    .home img{
+        height: 300px;
+    }
+    .home img:nth-child(2) {
+        display: none;
+    }  
+    .home img:nth-child(3) {
+        display: none;
+    }
+    section{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    section h1{
+        margin: 30px;
+        font-family: sourceSansBold;
+        font-size: 40px;
+    }
+    .products{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        border: 0.5px solid rgba(0, 0, 0, 0.3);
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+    }
+    article img{
+        width: 230px;
+    }
+    .category{
+        font-family: sourceSansBold;
+        font-size: 13px;
+        text-align: center;
+    }
+    .product-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        font-family: sourceSansBold;
+        font-size: 17px;
+        text-align: center;
+    }
+    .product-name a{
+        text-decoration: none;
+        color: black;
+    }
+    .price{
+        font-family: sourceSansBold;
+        font-size: 25px;
+        text-align: center;
+    }
+    .more-products{
+        margin: 20px;
+        width: 300px;
+        height: 35px;
+        border: none;
+        background-color: rgb(245, 245, 245);
+        font-family: sourceSansBold;
+        font-size: 15px;
+    }
+    .more-products:hover{
+        background-color: rgb(235, 235, 235);
+    }
+    .more-products a{
+        text-decoration: none;
+        color: black;
+      }
+    .heretics-basics-accesories{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .heretics-basics-accesories a{
+        width: 100%;
+    }
+    .heretics-basics-accesories img{
+        width: 100%;
+    }
+    .sponsors{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(245, 245, 245);
+    }
+    .sponsors-half{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .sponsors-half a{
+        width: 40px;
+    }
+    .sponsors-half img{
+        width: 40px;
+        transition: 500ms;
+    }
+    .social-media{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .social-media h2{
+        font-family: sourceSansBold;
+        font-size: 30px;
+    }
+    .social-media-icons{
+        display: flex;
+        gap: 10px;
+    }
+    .social-media-icons a{
+        width: 30px;
+    }
+    .social-media-icons img{
+        width: 30px;
+        filter: brightness(0%);
+    }
+    .social-media-icons img:hover{
+        filter: brightness(100%);
+    }
+    .newsletter{
+        width: 100%;
+        background-color: #282828;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .newsletter h2{
+        width: 90%;
+        font-family: sourceSansBold;
+        font-size: 25px;
+        color: white;
+    }
+    .newsletter-email{
+        display: flex;
+        margin-top: 20px;
+        width: 90%;
+        height: 50px;
+    }
+    .newsletter-email input{
+        width: 90%;
+        padding: 10px;
+        border: none;
+        background-color: #353535;
+    }
+    .newsletter-email button{
+        width: 10%; 
+        border: none;
+        background-color: #353535;
+    }
+    .newsletter-email button:hover{
+        background-color: #313131;
+    }
+    .newsletter-email img{
+        width: 25px;
+    }
+    .consent-checkbox{
+        width: 90%;
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .consent-checkbox input{
+        margin-top: 5px;
+    }
+    .consent-checkbox p{
+        font-family: sourceSansBold;
+        font-size: 12px;
+        color: #A1A1A1;
+    }
+    .consent-checkbox a{
+        color: #A1A1A1;
+    }
+    footer{
+        margin-top: 25px;
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer-section{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+    }
+    .footer-section h2{
+        font-family: sourceSansBold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .footer-section a{
+        text-decoration: none;
+        color: black;
+        font-family: sourceSansBold;
+        font-size: 15px;
+    }
+}

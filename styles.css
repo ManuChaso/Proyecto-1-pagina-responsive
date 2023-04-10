@@ -1,0 +1,358 @@
+@font-face {
+    font-family: sourceSansBold;
+    src: url('./assets/SourceSansPro-Bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0.5px 5px 0.5px black;
+}
+
+@media screen and (min-width: 1001px){
+
+    .shipping{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+    .shipping h1{
+        font-family: sourceSansBold;
+        font-size: 25px;
+        color: white;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+    }
+    .nav :nth-child(1) { order: 1; }
+    .nav :nth-child(2) { order: 3; }
+    .nav :nth-child(3) { order: 2; }
+    .logo{
+        width: 90px;
+        
+    }
+    .nav-buttons{
+        display: flex;
+        gap: 15px;
+    }
+    .nav-buttons :nth-child(1) { order: 3; }
+    .nav-buttons :nth-child(2) { order: 2; }
+    .nav-buttons :nth-child(3) { order: 1; }
+    .nav-icon{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-icon p{
+        font-family: sourceSansBold;
+        font-size: 13px;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .nav-links :nth-child(1) { order: 1; }
+    .nav-links :nth-child(2) { order: 2; }
+    .nav-links :nth-child(3) { order: 3; }
+    .nav-links :nth-child(4) { order: 4; }
+    .nav-links :nth-child(5) { order: 5; }
+    .nav-links :nth-child(6) { order: 6; }
+    .nav-links :nth-child(7) { order: 7; }
+    .nav-links :nth-child(8) { order: 8; }
+    .nav-links :nth-child(9) { order: 9; }
+
+    .nav-links a{
+        font-family: sourceSansBold;
+        font-size: 15px;
+        color: var(--color);
+        text-decoration: none;
+    }
+    
+    .menu-icon{
+        display: none;
+    }
+
+    .home {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+      }
+      
+      .home img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation-name: fade;
+        animation-duration: 12s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      
+      .home img:nth-child(1) {
+        animation-delay: 0s;
+      }
+      
+      .home img:nth-child(2) {
+        animation-delay: 4s;
+      }
+      
+      .home img:nth-child(3) {
+        animation-delay: 8s;
+      }
+      
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      section{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      section h1{
+        margin: 30px;
+        font-family: sourceSansBold;
+        font-size: 40px;
+      }
+      .products{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+      }
+      article:hover{
+        box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+      }
+      article img{
+        width: 230px;
+      }
+      .category{
+        font-family: sourceSansBold;
+        font-size: 13px;
+        text-align: center;
+      }
+      .product-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        font-family: sourceSansBold;
+        font-size: 17px;
+        text-align: center;
+      }
+      .product-name a{
+        text-decoration: none;
+        color: black;
+      }
+      .price{
+        font-family: sourceSansBold;
+        font-size: 25px;
+        text-align: center;
+      }
+      .more-products{
+        margin: 20px;
+        width: 300px;
+        height: 35px;
+        border: none;
+        background-color: rgb(245, 245, 245);
+        font-family: sourceSansBold;
+        font-size: 15px;
+      }
+      .more-products:hover{
+        background-color: rgb(235, 235, 235);
+      }
+      .more-products a{
+        text-decoration: none;
+        color: black;
+      }
+      .heretics-basics-accesories{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .heretics-basics-accesories a{
+        width: 50%;
+      }
+      .heretics-basics-accesories img{
+        width: 100%;
+        transition: 500ms;
+      }
+      .heretics-basics-accesories img:hover{
+        filter: contrast(70%);
+      }
+      .sponsors{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(245, 245, 245);
+      }
+      .sponsors-half{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+      }
+      .sponsors-half a{
+        width: 100px;
+      }
+      .sponsors-half img{
+        width: 100px;
+        filter: opacity(50%);
+        transition: 500ms;
+      }
+      .sponsors-half img:hover{
+        filter: opacity(100%);
+      }
+      .social-media{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .social-media h2{
+        font-family: sourceSansBold;
+        font-size: 30px;
+      }
+      .social-media-icons{
+        display: flex;
+        gap: 10px;
+      }
+      .social-media-icons a{
+        width: 40px;
+      }
+      .social-media-icons img{
+        width: 40px;
+        filter: brightness(0%);
+      }
+      .social-media-icons img:hover{
+        filter: brightness(100%);
+      }
+      .newsletter{
+        width: 100%;
+        background-color: #282828;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+      .newsletter h2{
+        width: 90%;
+        font-family: sourceSansBold;
+        font-size: 25px;
+        color: white;
+      }
+      .newsletter-email{
+        display: flex;
+        margin-top: 20px;
+        width: 90%;
+        height: 50px;
+      }
+      .newsletter-email input{
+        width: 95%;
+        padding: 10px;
+        border: none;
+        background-color: #353535;
+        color: white;
+      }
+      .newsletter-email button{
+        width: 5%;
+        height: 100%;
+        border: none;
+        background-color: #353535;
+      }
+      .newsletter-email button:hover{
+        background-color: #313131;
+      }
+      .newsletter-email img{
+        width: 25px;
+      }
+      .consent-checkbox{
+        width: 90%;
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+      }
+      .consent-checkbox input{
+        margin-top: 5px;
+      }
+      .consent-checkbox p{
+        font-family: sourceSansBold;
+        font-size: 12px;
+        color: #A1A1A1;
+      }
+      .consent-checkbox a{
+        color: #A1A1A1;
+      }
+      footer{
+        margin-top: 25px;
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .footer-section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+      }
+      .footer-section h2{
+        font-family: sourceSansBold;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .footer-section a{
+        text-decoration: none;
+        color: black;
+        font-family: sourceSansBold;
+        font-size: 15px;
+      }
+  }
