@@ -63,4 +63,4 @@ Quiero aclarar que la animación del "home" se la pedí a Chatgpt, soy capaz de 
 }
 ```
 
-También aclarar que he decidido separar el CSS en dos archivos (Escritorio y móvil) por que me parecía mas organizado. 
+También aclarar que he decidido separar el CSS en dos archivos (Escritorio y móvil) porque me parecía mas organizado. 
